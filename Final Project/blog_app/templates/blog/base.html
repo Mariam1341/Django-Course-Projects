@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+</head>
+<body>
+    <div class="header">
+  <h2>BOOK'S BLOG</h2>
+</div>
+    <div class = 'topnav'>
+        <a herf ="http://127.0.0.1:8000">HOME</a>
+        <a herf = "http://127.0.0.1:8000/login">LOGIN</a>
+        <a herf ="http://127.0.0.1:8000/logout">LOGOUT</a>
+
+
+
+    </div>
+<div class="row">
+    <div class="leftcolumn">
+<div class="card">
+               {% block content%}
+               {%endblock%}
+</div>
+
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>About me</h2>
+            <p>A little girl with a great passion for books</p>
+
+        </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p> <a herf ="#facebook">FACEBOOK</a> </p>
+        <p> <a herf ="#linkedin">LINKEDIN</a> </p>
+
+
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fbooks&psig=AOvVaw0beQ4aPJOQXusJrOR_kWCC&ust=1637253529256000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKj084frn_QCFQAAAAAdAAAAABAF" alt="alternatetext">
+</div>
+</body>
+</html>

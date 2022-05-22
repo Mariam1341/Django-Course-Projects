@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASK 2 DJANGO</title>
+    <style>
+        body{
+            margin-right: 200px;
+            margin-left: 200px;
+            background-color: #F2F2F2;
+            word-wrap: break-word;
+            font-family: 'Open Sans',sans-serif;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        #head{
+             text-align:center;
+             font-size: 40px;
+             padding: 35px 40px;
+             mix-blend-mode: color-burn;
+             background-color:#38B93E;
+             border: 1px solid #dadada;
+             margin-right: -15px;
+             margin-left: -15px;
+
+        }
+
+        .body{
+             margin-bottom: 100px;
+             padding: 45px 50px;
+             background-color: #fff;
+             border: 1px solid #dadada;
+             margin-right: -15px;
+             margin-left: -15px;
+
+        }
+
+        #content{
+            font-size: 20px;
+            color: #000;
+            display: table;
+            padding-right: 50px;
+            padding-left: 50px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1  id ='head'> ALL POSTS CREATED BY ADMIN</h1>
+    {% for i in posts_list %}
+        <div class = "body">
+            <h1 id = "headers">{{i.title}}</h1>
+            <h4 id = 'content'> {{i.content}} </h4>
+        </div>
+    {% endfor %}
+
+</body>
+</html>

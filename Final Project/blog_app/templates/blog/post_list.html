@@ -1,0 +1,28 @@
+{% extends 'blog/base.html'%}
+
+{%block title%}
+<title>POST LIST</title>
+{%endblock%}
+
+
+{% block content%}
+<h2>Available Posts</h2>
+
+
+    {% for post in post_list%}
+
+    <ul>
+        <li><a href="{% url 'blog_app:post_details' pk=post.pk %}">{{post.title}}</a></li>
+    </ul>
+
+    {%endfor%}
+
+    <div>
+        <button style='background-color:skyblue;width:150px;height:45px'>
+        <a href="{% url 'blog_app:create_post' %}" style='text-decoration:none;color:white'>Create Post</a>
+      </button>
+   </div>
+
+
+{%endblock%}
+

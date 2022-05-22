@@ -1,0 +1,26 @@
+{% extends 'blog/base.html'%}
+
+{%block title%}
+<title>{{post.title}} - Post Details</title>
+{%endblock%}
+
+{% block content%}
+
+
+
+      <h2>{{post.title}}</h2>
+      <h5>{{post.descreption}}</h5>
+        <h5>{{post.created_at}}</h5>
+
+      <p> {{post.content}}</p>
+
+ <div id='actions'>
+
+      <button><a style='text-decoration:none;' href="{% url 'blog_app:update_post' post.pk %}">Update Post</a></button>
+
+      <button><a style='text-decoration:none;' href="{% url 'blog_app:post_delete' post.pk %}">Delete Post</a></button>
+    </div>
+
+
+
+{%endblock%}

@@ -1,0 +1,20 @@
+{% extends 'blog/base.html'%}
+
+{%block title%}
+<title>HOME</title>
+{%endblock%}
+
+
+{% block content%}
+
+{% if user.is_authenticated %}
+<h1>You are Welcome, {{user.username}}</h1>
+<a href="{% url 'blog_app:post_list' %}">SEE ALL POSTS</a>
+
+{%else%}
+<h1>You are Welcome, Visitor</h1>
+<a href="{% url 'blog_app:login' %}">Login</a>
+
+{%endif%}
+
+{%endblock%}

@@ -1,0 +1,18 @@
+{% extends 'blog/base.html'%}
+
+{%block title%}
+<title>UPDATEPOST</title>
+{%endblock%}
+
+{% block content%}
+
+<h4>THE OLD CONTENT</h4>
+<p>{{post.content}}</p>
+
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Update">
+</form>
+
+
+{%endblock%}

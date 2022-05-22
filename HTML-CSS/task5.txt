@@ -1,0 +1,5 @@
+1- when we prssed the url the browser looks for the adress of the source file  
+2- then http sends a request to the server to allowing it to see the sourcez1 file 
+3- the server sends the response
+4-the browser begins to read the source file 
+5- once it finished it load the padge 

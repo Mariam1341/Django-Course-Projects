@@ -1,0 +1,11 @@
+a)it's mean that there is some steps between the user action and the result he see
+1-user send a request to django 
+2- django manage what is happened next
+	1)check to the avaliable resource in URL
+	2)URL called the View(interact with model to carry data and renders templates)
+	3)View called *Model (handle database)
+		      *Template	(handle with user interface)
+3-after that django return back to the user and show the interface and result of the process
+
+
+b)is file where we write the basic code that show django what to do (what data should reseve/ render templates)

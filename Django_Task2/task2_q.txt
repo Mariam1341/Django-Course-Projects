@@ -1,0 +1,8 @@
+d)migration command or 
+
+e)from admin we register the model 
+then(python manage.py makemigrations)
+then(python manage.py migrate)
+then(python manage.py runserver)
+
+ => http://127.0.0.1:8000/Facebook/

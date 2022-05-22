@@ -1,0 +1,29 @@
+  body{
+   background-color: #F4F6F7; 
+   text-align : left;
+   text-align: justify;
+}
+
+form{
+    border: 1px solid #979A9A;
+    background-color: white;
+    margin: 50px 40%;
+    width: 20%;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 10%;
+  
+}
+button{
+  color: white; 
+  background-color: #2980B9;
+  border : 1px solid #D0D3D4;
+text-align: right;}
+
